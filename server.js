@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MESSAGE = process.env.APP_MESSAGE || 'Hello World!';
+const MESSAGE = process.env.APP_MESSAGE || 'Hello World from GitHub Webhook!';
 const VERSION = process.env.VERSION || '1.0.0';
 
 app.use(express.json());

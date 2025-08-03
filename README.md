@@ -2,6 +2,8 @@
 
 This is a demonstration application showing how the **prod-pi self-updating infrastructure system** works.
 
+<!-- Lifecycle test change - August 3, 2025 -->
+
 ## What This Demonstrates
 
 This repository demonstrates the complete end-to-end workflow:

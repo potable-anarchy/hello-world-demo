@@ -1,0 +1,16 @@
+# Cloudflared tunnel configuration fragment
+# This will be merged into the main /etc/cloudflared/config.yml
+
+ingress:
+  # Public domain access
+  - hostname: ${PUBLIC_DOMAIN}
+    service: http://localhost:${APP_PORT}
+    originRequest:
+      noTLSVerify: true
+      
+  # Optional: Path-based routing on main domain
+  - hostname: prod.circle.solutions
+    path: /${APP_NAME}/*
+    service: http://localhost:${APP_PORT}
+    originRequest:
+      noTLSVerify: true

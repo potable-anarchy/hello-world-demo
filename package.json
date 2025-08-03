@@ -1,0 +1,16 @@
+{
+  "name": "hello-world-demo",
+  "version": "1.0.0",
+  "description": "Demo app for prod-pi self-updating system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["demo", "prod-pi", "hello-world"],
+  "author": "prod-pi system",
+  "license": "MIT"
+}
